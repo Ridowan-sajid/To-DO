@@ -1,0 +1,104 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background-color: white;
+}
+.head{
+ display: flex;
+ justify-content: center;
+ 
+}
+.head h1{
+ margin-top: 10vh;
+ font-size: 3rem;
+}
+.section{
+ /* height: 50vh; */
+ width: 50vw;
+ background-color: blueviolet;
+ /* background-color: rgb(255,255,255,.8); */
+ margin: 50px auto;
+}
+.todo{
+ color: rgb(255, 255, 255);
+ display: flex;
+ justify-content: space-around;
+ padding-top: 10px;
+ padding-bottom: 2rem;
+ border: 1px solid white;
+}
+.details{
+ font-size: 1.5rem;
+}
+button{
+ background-color: whitesmoke;
+}
+.input-todo{
+ text-align: center;
+ margin-left:30% ;
+ font-size: 1.5rem;
+}
+.input-todo:focus{
+ color: #000;
+ background-color: blueviolet;
+}
+.submit{
+ width: 50vw;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 20px;
+ justify-content: center;
+ margin: 0 auto;
+}
+.btn-outline-success{
+ width: 5rem;
+}
+@media screen and (max-width:1200px){
+ .section{
+  width: 500px;
+ }
+ .btn{
+  font-size: small;
+ }
+ .input-todo{
+  text-align: center;
+  margin-left:10% ;
+  font-size: 1rem;
+ }
+
+ .submit{
+  width: 30vw;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+ }
+}
+
+@media screen and (max-width:800px){
+ .section{
+  width: 400px;
+ }
+ .btn{
+  font-size: small;
+ }
+ .input-todo{
+  text-align: center;
+  margin-left:10% ;
+  font-size: 1rem;
+ }
+
+ .submit{
+  width: 30vw;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+ }
+}
+
